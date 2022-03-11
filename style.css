@@ -1,0 +1,84 @@
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+  background-color: ghostwhite;
+}
+
+.profile-picture {
+  width: 250px;
+}
+
+.intro {
+  max-width: 50ch;
+}
+
+.projects-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr 2fr 50px;
+  grid-template-areas:
+    "header header header header"
+    "left-gutter thumbnail1 description1 right-gutter"
+    "left-gutter thumbnail2 description2 right-gutter"
+    "left-gutter thumbnail3 description3 right-gutter"
+    "footer footer footer footer";
+  row-gap: 10px;
+}
+
+.project-header {
+  grid-area: header;
+  display: sticky;
+  padding: 0 20px;
+  border-bottom: 3px solid black;
+}
+
+.project-thumbnail {
+  border-radius: 10px;
+  width: 250px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thumbnail1 {
+  grid-area: thumbnail1;
+}
+
+.thumbnail2 {
+  grid-area: thumbnail2;
+}
+
+.thumbnail3 {
+  grid-area: thumbnail3;
+}
+
+.description1 {
+  grid-area: description1;
+}
+
+.description2 {
+  grid-area: description2;
+}
+
+.description3 {
+  grid-area: description3;
+}
