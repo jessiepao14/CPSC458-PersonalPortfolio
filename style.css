@@ -104,7 +104,8 @@ header {
 }
 
 #about-me {
-  padding-top: 50px;
+  border-top: solid white 1px;
+  /* padding-top: 50px; */
   /* width: 100%; */
 }
 
